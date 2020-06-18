@@ -13,7 +13,7 @@ namespace CrudOperationUsingWebFormAndDapper
         public List<Person> GetPeople(string Name)
         {
             using(IDbConnection  connection = new System.Data.SqlClient.SqlConnection(Helper.Vcs("TestDB")))
-            {
+            {           
         //      var output =  connection.Query<Person>($"Select * From Test Where Name = '{ lastname }'").ToList();
              var output =  connection.Query<Person>("spGetData @name", new { name = Name}).ToList();
                 return output;

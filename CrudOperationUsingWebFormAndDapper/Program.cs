@@ -8,6 +8,8 @@ namespace CrudOperationUsingWebFormAndDapper
 {
     static class Program
     {
+       //If this code works, then it was writen by Rosabel Olugbenga. If it doesn't, then i can only say one thing  "IT IS WHAT IT IS".
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
